@@ -1,0 +1,42 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+}
+
+.search-icon, .basket-icon {
+    height: 25px;
+    margin-left: 15px;
+}
+
+.dot {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+    background-color: red;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}

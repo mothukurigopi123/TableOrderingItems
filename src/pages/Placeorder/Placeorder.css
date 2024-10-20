@@ -1,0 +1,116 @@
+.place-order {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 120px auto;
+}
+
+.place-order-left, .place-order-right {
+    width: 48%;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.table-number {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+    background: linear-gradient(90deg, #fc5c7d, #ff9800);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    width: 250px; /* Increased width */
+    max-width: 100%; /* Ensures it doesn't overflow */
+}
+
+.cart-item-summary {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.cart-item-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.item-name {
+    flex: 1;
+}
+
+.item-price, .item-subtotal, .item-quantity {
+    width: 100px;
+    text-align: right;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.place-order-right {
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+.cart-total {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.proceed-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.proceed-button:hover {
+    background-color: #218838;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .place-order {
+        flex-direction: column;
+    }
+    .place-order-left, .place-order-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

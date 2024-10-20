@@ -1,0 +1,43 @@
+.food-display {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.food-display h2 {
+    font-size: max(2.5vw, 28px);
+    font-weight: 600;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 20px;
+    gap: 30px;
+    row-gap: 50px;
+    padding: 10px;
+}
+
+.food-display-list > div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-display-list > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .food-display h2 {
+        font-size: 24px;
+    }
+
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
